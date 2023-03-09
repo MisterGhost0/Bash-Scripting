@@ -58,7 +58,7 @@ do
 		if [ ${RETURN} -eq 0 ];
 		then
 			nslookup $TARGET | cut -d' ' -f 3 >> $HOME/responded-ping-requests-${i}.xxx.txt
-			echo "${TARGET}" >> /home/t279/responded-ping-requests-${i}.xxx.txt
+			echo "${TARGET}" >> $HOME/responded-ping-requests-${i}.xxx.txt
   			echo "Target adress responed to ping request!"
 			echo "${TARGET} pinged successfully!"
 			echo "-------------------------------------------" >> $HOME/responded-ping-requests-${i}.xxx.txt
